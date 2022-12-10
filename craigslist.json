@@ -1,0 +1,1420 @@
+{
+    "apiVersion": 7,
+    "configId": "e56cb584be3b1cbc1834e32baa9195023f7557765c85bf463687c991f28721d5",
+    "configTs": 1670643006,
+    "data": {
+        "areas": {
+            "350": {
+                "areaUnits": "ft",
+                "currency": "USD",
+                "distanceUnits": "mi",
+                "name": "corvallis"
+            }
+        },
+        "cacheTs": 1670649965,
+        "canonicalUrl": "\/\/corvallis.craigslist.org\/search\/sss?query=macbook&sort=date",
+        "categoryAbbr": "sss",
+        "decode": {
+            "locationDescriptions": [
+                0,
+                "Corvallis",
+                "Albany",
+                "CARVALLIS,OR",
+                "Portland - West Slope",
+                "East Vancouver",
+                "SE Portland",
+                "Vancouver",
+                "Milwaukie",
+                "Salem",
+                "Bellevue",
+                "Sunnyside",
+                "Hillsboro, OR",
+                "South End Whidbey",
+                "Lynnwood",
+                "Seattle",
+                "Keizer",
+                "kent station",
+                "Burien \/ West Seattle",
+                "SE Portland - Mt Scott-Arleta",
+                "NE Portland",
+                "multnomah county",
+                "Federal Way\/Tukwila",
+                "Northgate\/Seattle",
+                "Seattle\/Federal Way",
+                "Northgate\/Seattle\/Seatac",
+                "Vancouver, WA",
+                "Techable.com",
+                "NE",
+                "Seattle\/Seatac",
+                "Happy Valley",
+                "Portland",
+                "Renton",
+                "Sherwood",
+                "Lynnwood\/Edmonds",
+                "Bend\/Sisters",
+                "sw portland",
+                "Leavenworth",
+                "Century West",
+                "Tacoma"
+            ],
+            "locations": [
+                0,
+                [
+                    350,
+                    "corvallis"
+                ],
+                [
+                    9,
+                    "portland",
+                    "wsc"
+                ],
+                [
+                    9,
+                    "portland",
+                    "clk"
+                ],
+                [
+                    9,
+                    "portland",
+                    "mlt"
+                ],
+                [
+                    9,
+                    "portland",
+                    "clc"
+                ],
+                [
+                    232,
+                    "salem"
+                ],
+                [
+                    2,
+                    "seattle",
+                    "est"
+                ],
+                [
+                    461,
+                    "skagit"
+                ],
+                [
+                    2,
+                    "seattle",
+                    "sno"
+                ],
+                [
+                    2,
+                    "seattle",
+                    "see"
+                ],
+                [
+                    2,
+                    "seattle",
+                    "skc"
+                ],
+                [
+                    233,
+                    "bend"
+                ],
+                [
+                    325,
+                    "wenatchee"
+                ],
+                [
+                    2,
+                    "seattle",
+                    "tac"
+                ]
+            ],
+            "maxPostedDate": 1670647457,
+            "minDate": 1702185965,
+            "minPostedDate": 1666853451,
+            "minPostingId": 7548299997,
+            "neighborhoods": [
+                0
+            ],
+            "version": 1
+        },
+        "detailsOrder": "date",
+        "filterButtons": [],
+        "filters": [
+            {
+                "autocomplete": "search",
+                "label": "query",
+                "name": "query",
+                "type": "text"
+            },
+            {
+                "name": "vicinity",
+                "type": "hidden"
+            },
+            {
+                "label": "sort by",
+                "name": "sort",
+                "options": [
+                    {
+                        "label": "newest",
+                        "value": "date"
+                    },
+                    {
+                        "label": "oldest",
+                        "value": "dateoldest"
+                    },
+                    {
+                        "label": "relevant",
+                        "value": "rel"
+                    },
+                    {
+                        "label": "﹩→ $$$",
+                        "value": "priceasc"
+                    },
+                    {
+                        "label": "$$$ → ﹩",
+                        "value": "pricedsc"
+                    }
+                ],
+                "type": "select",
+                "value": "date"
+            },
+            {
+                "input_prefix": "$",
+                "label": "price",
+                "maxVal": {
+                    "name": "max_price",
+                    "placeholder": "max"
+                },
+                "minVal": {
+                    "name": "min_price",
+                    "placeholder": "min"
+                },
+                "name": "price",
+                "type": "range",
+                "variant": "barchartwidget"
+            },
+            {
+                "label": "sold by",
+                "name": "purveyor",
+                "options": [
+                    {
+                        "label": "all",
+                        "value": "all"
+                    },
+                    {
+                        "label": "owner",
+                        "value": "owner"
+                    },
+                    {
+                        "label": "dealer",
+                        "value": "dealer"
+                    }
+                ],
+                "type": "select"
+            },
+            {
+                "autocomplete": "makemodel",
+                "label": "make and model",
+                "name": "auto_make_model",
+                "type": "text",
+                "variant": "text"
+            },
+            {
+                "label": "condition",
+                "name": "condition",
+                "options": [
+                    {
+                        "label": "new",
+                        "value": 10
+                    },
+                    {
+                        "label": "like new",
+                        "value": 20
+                    },
+                    {
+                        "label": "excellent",
+                        "value": 30
+                    },
+                    {
+                        "label": "good",
+                        "value": 40
+                    },
+                    {
+                        "label": "fair",
+                        "value": 50
+                    },
+                    {
+                        "label": "salvage",
+                        "value": 60
+                    }
+                ],
+                "type": "multi",
+                "variant": "standard"
+            },
+            {
+                "form": [
+                    {
+                        "label": "search titles only",
+                        "name": "srchType",
+                        "type": "boolean",
+                        "value": "T"
+                    },
+                    {
+                        "label": "has image",
+                        "name": "hasPic",
+                        "type": "boolean",
+                        "value": 1
+                    },
+                    {
+                        "label": "posted today",
+                        "name": "postedToday",
+                        "type": "boolean",
+                        "value": 1
+                    },
+                    {
+                        "label": "hide duplicates",
+                        "name": "bundleDuplicates",
+                        "type": "boolean",
+                        "value": 1
+                    }
+                ],
+                "name": "basic bools",
+                "type": "group"
+            },
+            {
+                "form": [
+                    {
+                        "label": "cryptocurrency ok",
+                        "name": "crypto_currency_ok",
+                        "type": "boolean",
+                        "value": 1,
+                        "variant": "checkbox"
+                    },
+                    {
+                        "label": "delivery available",
+                        "name": "delivery_available",
+                        "type": "boolean",
+                        "value": 1,
+                        "variant": "checkbox"
+                    }
+                ],
+                "name": "crypto_currency_ok",
+                "type": "group"
+            },
+            {
+                "label": "language of posting",
+                "name": "language",
+                "options": [
+                    {
+                        "label": "afrikaans",
+                        "value": 1
+                    },
+                    {
+                        "label": "català",
+                        "value": 2
+                    },
+                    {
+                        "label": "dansk",
+                        "value": 3
+                    },
+                    {
+                        "label": "deutsch",
+                        "value": 4
+                    },
+                    {
+                        "label": "english",
+                        "value": 5
+                    },
+                    {
+                        "label": "español",
+                        "value": 6
+                    },
+                    {
+                        "label": "suomi",
+                        "value": 7
+                    },
+                    {
+                        "label": "français",
+                        "value": 8
+                    },
+                    {
+                        "label": "italiano",
+                        "value": 9
+                    },
+                    {
+                        "label": "nederlands",
+                        "value": 10
+                    },
+                    {
+                        "label": "norsk",
+                        "value": 11
+                    },
+                    {
+                        "label": "português",
+                        "value": 12
+                    },
+                    {
+                        "label": "svenska",
+                        "value": 13
+                    },
+                    {
+                        "label": "filipino",
+                        "value": 14
+                    },
+                    {
+                        "label": "türkçe",
+                        "value": 15
+                    },
+                    {
+                        "label": "中文",
+                        "value": 16
+                    },
+                    {
+                        "label": "العربية",
+                        "value": 17
+                    },
+                    {
+                        "label": "日本語",
+                        "value": 18
+                    },
+                    {
+                        "label": "한국말",
+                        "value": 19
+                    },
+                    {
+                        "label": "русский",
+                        "value": 20
+                    },
+                    {
+                        "label": "tiếng việt",
+                        "value": 21
+                    }
+                ],
+                "type": "multi",
+                "variant": "standard"
+            }
+        ],
+        "firstNearbyResultId": "7564620895",
+        "hubLinks": [],
+        "humanReadableParams": [
+            {
+                "key": "query",
+                "name": "search terms",
+                "value": "macbook"
+            },
+            {
+                "key": "sort",
+                "name": "sort",
+                "value": "newest"
+            }
+        ],
+        "items": [
+            [
+                18310758,
+                3775785,
+                199,
+                30,
+                "1:1~44.5904~-123.2722",
+                [
+                    4,
+                    "3:00L0L_5DgbnM8Dh7Fz_0CI0t2"
+                ],
+                "Apple 128GB Flash SSD"
+            ],
+            [
+                13182440,
+                3709369,
+                7,
+                500,
+                "1:1~44.5917~-123.2738",
+                [
+                    4,
+                    "3:00y0y_MfRY7aELdTz_0CI0t2",
+                    "3:00p0p_1t1ZcpqUzjYz_0CI0t2",
+                    "3:00S0S_2dN5W0jqFRuz_0CI0t2",
+                    "3:00707_cgLPB8n89rKz_0t20CI",
+                    "3:00Z0Z_3RXFSPdhGwnz_0t20CI",
+                    "3:00z0z_ipwjOzpHN6fz_0CI0t2",
+                    "3:00E0E_k9uYmBY6RJIz_0CI0t2"
+                ],
+                "M1 Mac Mini 2020 Computer 256GB SSD 8GB"
+            ],
+            [
+                17952721,
+                3693293,
+                7,
+                285,
+                "1:1~44.5904~-123.2722",
+                [
+                    4,
+                    "3:00p0p_awrWYH7U2Yzz_0kU0dW",
+                    "3:00o0o_itigBlMty7Qz_0kU0dW",
+                    "3:00404_fCeZ4YaoR1Iz_0kU0dW",
+                    "3:00p0p_imgbkmlCxPfz_0kU0dW",
+                    "3:00Q0Q_a5ARzxP22Lkz_0kU0dW",
+                    "3:00707_aKSj52twSLtz_0kU0dW",
+                    "3:00S0S_kDVRsIjB9wUz_0kU0dW",
+                    "3:00y0y_ioySNdqVgj8z_0kU0dW",
+                    "3:00h0h_hwlJugMJM6az_0kU0dW",
+                    "3:00404_1kGsW0wyCf5z_0kU0dW",
+                    "3:00202_lQWNNqoS9wgz_0kU0dW",
+                    "3:00L0L_1Ju9NEqrE0qz_0kU0dW",
+                    "3:00M0M_hTZDnN9zofWz_0kU0dW"
+                ],
+                "Apple MacBook Pro A1502 - Retina Laptop Computer For Sale - Excellent"
+            ],
+            [
+                17538521,
+                3600285,
+                7,
+                800,
+                "1: 2~44.6373~-123.1045",
+                [
+                    4,
+                    "3: 00H0H_294zLACzf5sz_0t20CI",
+                    "3: 01111_9NHzNjnzLbUz_0t20CI",
+                    "3: 00x0x_1u4lw5PzAOHz_0t20CI",
+                    "3: 00707_3zuoyOvNX3bz_0t20CI",
+                    "3: 01616_anGiDpNmn8uz_0t20CI",
+                    "3: 00W0W_klL7Nskv7VFz_0t20CI",
+                    "3: 00S0S_fZdVfOl485Nz_0t20CI",
+                    "3: 00K0K_cyD33l4boffz_0t20CI",
+                    "3: 01414_jyaz9qlnKiRz_0t20CI"
+                ],
+                "Pc Gaming Build (Gift Idea)"
+            ],
+            [
+                17418482,
+                3584037,
+                7,
+                265,
+                "1: 1~44.5904~-123.2722",
+                [
+                    4,
+                    "3: 00n0n_iyz5LisZWGQz_0kU0dW",
+                    "3: 00909_s7eS1DQMh1z_0kU0dW",
+                    "3: 00V0V_kB2rlzgHZwJz_0kU0dW",
+                    "3: 00U0U_lPIxybw6FIIz_0kU0dW",
+                    "3: 00L0L_uoOtHSzugpz_0kU0dW",
+                    "3: 00i0i_75dHX1HSJvwz_0kU0dW"
+                ],
+                "Apple MacBook Pro Laptop Computer For Sale - Excellent Condition"
+            ],
+            [
+                17235561,
+                3533328,
+                190,
+                1700,
+                "1: 3~44.5904~-123.2722",
+                [
+                    4,
+                    "3: 00O0O_e7dn2oIcFAlz_0da09h",
+                    "3: 00H0H_fQAG0nCUYMvz_0kH0kL"
+                ],
+                "**CASH FOR MEDTRONIC,OMNI PODS,TEST STRIPS & DEXCOM G6 SUPPLIES**"
+            ],
+            [
+                14547726,
+                2911002,
+                7,
+                60,
+                "1: 1~44.5638~-123.2779",
+                [
+                    4,
+                    "3: 00303_GlH6BvufCtz_1320MM",
+                    "3: 00202_cojArEZhOZ4z_1320MM"
+                ],
+                "*2* HP Pavilion 27-Inch Full HD 1080p IPS LED Monitors"
+            ],
+            [
+                11867996,
+                2232355,
+                7,
+                675,
+                "1: 2~44.652~-123.1333",
+                [
+                    4,
+                    "3: 00i0i_iajJXQZ1GMsz_0CI0t2",
+                    "3: 00Y0Y_dTo9zZz3L88z_0CI0t2",
+                    "3: 00505_b33okR1NIrGz_0CI0t2"
+                ],
+                "Apple MacBook Pro 15\" (512GB SSD, Intel Core i7 Quad Core"
+            ],
+            [
+                10866684,
+                1996586,
+                7,
+                1200,
+                "1:1~44.5564~-123.28",
+                [
+                    4,
+                    "3:00a0a_8VnT9IxdbdTz_0wf0CI",
+                    "3:00101_9YlW48AttOTz_0CI0t2",
+                    "3:01212_eA1ElaJ8XBYz_0CI0t2",
+                    "3:00A0A_2Wl0UYpYiMIz_0t20CI",
+                    "3:00808_aZZPHowDUYGz_0t20CI",
+                    "3:00W0W_4yIWwhrNTlFz_0t20CI",
+                    "3:00V0V_3BEK3295I7Fz_0t20CI",
+                    "3:00q0q_fdyHS0e4u2az_0CI0t2",
+                    "3:00f0f_gdYxmnS3oMaz_0CI0t2",
+                    "3:00j0j_bQySBqhtCywz_0CI0vD"
+                ],
+                "2020 Retina Macbook Pro 1tb i5 2.0ghz Iris XE Plus integrated graphics"
+            ],
+            [
+                0,
+                1913793,
+                96,
+                45,
+                "1:1~44.5988~-123.2456",
+                [
+                    4,
+                    "3:00303_7PnJx3Ot7DNz_0hS0CI",
+                    "3:00X0X_da9EM7uzcogz_0hS0CI",
+                    "3:00m0m_4RCwphylSAjz_0hS0CI",
+                    "3:00r0r_fh4pV6nKAchz_0lf0CI",
+                    "3:00606_ptqfAf2iZ4z_0CI0CI",
+                    "3:00y0y_fkjhrtV0zQYz_0CI0CI",
+                    "3:00303_cJ0bCJSt8zAz_0CI0CI",
+                    "3:00505_kE4LgtkRBVFz_0CI0CI",
+                    "3:00000_hA3KjlAH3yMz_0CI0CI",
+                    "3:00C0C_jn1PpUg0qsYz_0CI0CI"
+                ],
+                "Anker USB-C 6 In 1 65W Ethernet Hub For Macbook Pro\/Air & iPad Pro. Like New"
+            ],
+            [
+                4030234,
+                456170,
+                96,
+                1800,
+                "1:1~44.5678~-123.2815",
+                [
+                    4,
+                    "3:00X0X_7uSmQ0RQlYz_0CI0t2",
+                    "3:00a0a_hoYojYeuaLVz_0CI0t2",
+                    "3:00505_lwbRm0jrZuDz_0CI0t2",
+                    "3:00U0U_jcKlmWYwg8Rz_0CI0t2"
+                ],
+                "MacBook Air 2022 M2"
+            ],
+            [
+                3962431,
+                419368,
+                96,
+                550,
+                "1:0~44.5316~-122.8821",
+                [
+                    4,
+                    "3:00404_gFXc3Uedsb6z_0t20CI",
+                    "3:00G0G_3tMID80JEoiz_0t20CI",
+                    "3:00f0f_h1NZLtpS6u0z_0CI0t2",
+                    "3:00g0g_ang8DOplG4sz_0t20CI"
+                ],
+                "Mack book Air"
+            ],
+            [
+                2160334,
+                0,
+                7,
+                325,
+                "1:1~44.5638~-123.2779",
+                [
+                    4,
+                    "3:00303_1hY8aWeKHByz_1320MM",
+                    "3:00t0t_gyR7yW9dVMdz_1320MM",
+                    "3:00k0k_5yz0RxFBFNHz_1320MM",
+                    "3:00g0g_8Rt44zIYQ2z_0t20CI",
+                    "3:00O0O_lLMTKql5nz4z_0lM0t2"
+                ],
+                "2015 Macbook Air"
+            ],
+            [
+                16320898,
+                3794006,
+                7,
+                1825,
+                "2:4~45.4985~-122.7787",
+                [
+                    4,
+                    "3:00c0c_DVjUeBSQDYz_0qS0t2"
+                ],
+                "2021 16\" Apple MacBook M1 Pro, 1TB SSD, Apple Warranty"
+            ],
+            [
+                17235653,
+                3793217,
+                7,
+                495,
+                "3:5~45.6359~-122.5155",
+                [
+                    4,
+                    "3:00g0g_16dbCGhqmhtz_0CI0t2",
+                    "3:00808_eAU6oGi8M65z_0CI0t2",
+                    "3:01717_iv1ZUXA6Wghz_0CI0t2",
+                    "3:00p0p_ln2NnidEvqSz_0CI0t2",
+                    "3:01212_j3Sz679qlzDz_0CI0t2",
+                    "3:00o0o_9Ixnki3NMkyz_0CI0oc",
+                    "3:00f0f_eQvK2imVvPez_0CI0oc",
+                    "3:00g0g_efytX1PHKElz_0CI0oc"
+                ],
+                "Macbook Pro w 13.3” Retina Screen 16GB Ram 512GB SSD - MINT!"
+            ],
+            [
+                17241550,
+                3793211,
+                7,
+                325,
+                "3:5~45.6359~-122.5155",
+                [
+                    4,
+                    "3:00l0l_bNx73jOqnHcz_0CI0t2",
+                    "3:00e0e_enHW6bEec5ez_0CI0t2",
+                    "3:00909_hz6qg7OseJOz_0CI0t2",
+                    "3:00N0N_G50chY7aViz_0CI0t2",
+                    "3:00000_fQabO5rh3Gqz_0CI0t2",
+                    "3:00Q0Q_92pyEPOHuUmz_0CI0t2",
+                    "3:00707_i1stYwDYwPZz_0CI0t2",
+                    "3:00202_4L4P5iHCaXkz_0CI0t2",
+                    "3:00g0g_5OUYJCf436vz_0ne0ew",
+                    "3:00c0c_6DMjJ2UIhAbz_0ne0ew",
+                    "3:00505_2nu8eIr7pBvz_0ne0ew"
+                ],
+                "Macbook Air 13” Intel i7  8GB Ram 256GB SSD - MINT!"
+            ],
+            [
+                17244280,
+                3793204,
+                7,
+                300,
+                "3:5~45.6359~-122.5155",
+                [
+                    4,
+                    "3:00q0q_lPvr6iLjwuRz_0CI0t2",
+                    "3:00w0w_6qTbdkF2sHBz_0CI0t2",
+                    "3:00d0d_eXFUaJd8Z9uz_0CI0t2",
+                    "3:00w0w_aRHxU0pvWAhz_0CI0t2",
+                    "3:00606_4mvFEkCHIqmz_0CI0t2",
+                    "3:00Z0Z_2zXnQD3cgTkz_0CI0t2",
+                    "3:01717_2xeqlNsYI1dz_0CI0t2",
+                    "3:00x0x_fC8uYtK67vhz_0CI0t2",
+                    "3:00Y0Y_cu3x5dosuEvz_0CI0t2",
+                    "3:00W0W_3J5W0KvdOmPz_0m20co",
+                    "3:00Z0Z_9WDPsXsQQCBz_0m20co",
+                    "3:00H0H_gqhSCF66RhCz_0m20co"
+                ],
+                "Macbook Air 11” Intel i7  8GB Ram 512GB SSD - MINT!"
+            ],
+            [
+                18381070,
+                3792007,
+                7,
+                199,
+                "4:6~45.483~-122.612",
+                [
+                    4,
+                    "3:00m0m_gXBwu2SGEW5z_0yL0rJ",
+                    "3:00C0C_fxEgMM2Fokfz_0ta0t2",
+                    "3:00404_gfMfdoUqnozz_0vr0qA",
+                    "3:00T0T_lXGQ1LcSRjkz_0CI0si",
+                    "3:00W0W_ezvQ2HK907tz_0CI0rf"
+                ],
+                "15\" Apple Macbook Pro 2.53Ghz i5, 8GB RAM, 256GB SSD, High Res Matte"
+            ],
+            [
+                9243521,
+                3791388,
+                7,
+                1200,
+                "3:7~45.6498~-122.6812",
+                [
+                    4,
+                    "3:00y0y_9llTiJbtrtJz_0CI0CI",
+                    "3:00R0R_66hR2oTaAKSz_0CI0t2",
+                    "3:00404_exhWl7UphLhz_0CI0t2",
+                    "3:00f0f_BuJ8u0Vlooz_0CI0uY"
+                ],
+                "Apple iMac 27in Retina 5K Display (512GB SSD, Intel Core i7 10th Gen. 3.80 GHz"
+            ],
+            [
+                18373934,
+                3789492,
+                7,
+                125,
+                "5:8~45.4021~-122.6144",
+                [
+                    4,
+                    "3:00808_3DiJgrP2gTKz_0hr0CI"
+                ],
+                "2011 13 inch MacBook (A1278) with i5 processor"
+            ],
+            [
+                17539273,
+                3789096,
+                7,
+                150,
+                "6:9~44.9039~-123.0445",
+                [
+                    4,
+                    "3:00505_6byyqIRAhIGz_0CI0t2",
+                    "3:00m0m_cO1QcPCp7KHz_0CI0t2",
+                    "3:00x0x_eP9Zi6K7kwgz_0CI0t2",
+                    "3:00D0D_lOHv39I7NKBz_0CI0t2",
+                    "3:00p0p_l1B4he2o6MRz_0CI0t2"
+                ],
+                "macbook pro 15'' 2010"
+            ],
+            [
+                18370570,
+                3788519,
+                7,
+                450,
+                "7:10~47.5614~-122.1552",
+                [
+                    4,
+                    "3:00w0w_iZi3v8yFaNez_0dW0as",
+                    "3:00404_u5ZDygwuF1z_0bC08I",
+                    "3:00I0I_7EKGNlU3Kv5z_0dW0as",
+                    "3:00T0T_bwAd3RNRr3ez_0dW0as",
+                    "3:00Y0Y_gMkPwWH4pXbz_0bC0fu"
+                ],
+                "MacBook Pro 15\"-i7 Quad Core, 16 GB, 500 GB SSD, well maintained 2014"
+            ],
+            [
+                18368996,
+                3788104,
+                7,
+                150,
+                "4:11~45.5121~-122.6371",
+                [
+                    4,
+                    "3:00y0y_iREtwRWIHIvz_0lM0t2",
+                    "3:01414_daiLUM12Hx0z_0CI0t2",
+                    "3:00P0P_9GoEDrige88z_0CI0t2",
+                    "3:00k0k_iMMHZh4qBCqz_0CI0t2",
+                    "3:00E0E_bVZ91JBPsbPz_0CI0t2",
+                    "3:00i0i_6fJDb56FUFwz_0CI0t2",
+                    "3:00J0J_ayfMhggF5DZz_0CI0t2",
+                    "3:00f0f_jkh9k6VgKMgz_0CI0t2"
+                ],
+                "2015 MacBook Air 13\""
+            ],
+            [
+                18359373,
+                3785364,
+                199,
+                30,
+                "2:12~45.5144~-122.9028",
+                [
+                    4,
+                    "3:00X0X_lh3V3sgeFkoz_0CI0t2",
+                    "3:00U0U_eBthmwnQTJzz_0CI0t2",
+                    "3:00V0V_ceQEDnq5vNcz_0CI0t2",
+                    "3:00D0D_8Uk8LJCqZ7pz_0CI0t2",
+                    "3:00b0b_230oNoX6Adsz_0CI0t2",
+                    "3:00j0j_gTgPZigcwwGz_0CI0t2",
+                    "3:00j0j_dR6wwqHOWefz_0CI0t2",
+                    "3:00b0b_bkKR5z0Prpez_0CI0t2",
+                    "3:00N0N_d7VGBK2XCh8z_0CI0t2",
+                    "3:01414_gN3S9LR5FKez_0CI0t2"
+                ],
+                "OEM Apple MacBook Power Supply"
+            ],
+            [
+                13464832,
+                3778906,
+                7,
+                400,
+                "8:13~47.9508~-122.3916",
+                [
+                    4,
+                    "3:00b0b_8an9wXHU8GVz_0fu0kE",
+                    "3:00N0N_a2iLfUp7sNJz_06U03J",
+                    "3:00W0W_jPMVbDrz58Nz_07R04M",
+                    "3:00s0s_15vacSMZdURz_0al06W",
+                    "3:00t0t_29cqQB8IaYNz_0dD0c1",
+                    "3:00j0j_epeZhidpAWhz_09V04z",
+                    "3:00A0A_8GHTQ0NlhTQz_06d084"
+                ],
+                "Apple Macbook Pro Model A1398 15.4\" Display"
+            ],
+            [
+                18328979,
+                3778722,
+                7,
+                220,
+                "9:14~47.864~-122.2793",
+                [
+                    4,
+                    "3:00F0F_g2xaw4ntJdbz_0t20CI",
+                    "3:00Q0Q_k8TwEi5UqJnz_0t20CI",
+                    "3:01515_dpZwMwtox9cz_0t20CI",
+                    "3:01515_3tgtR0pnZQCz_0t20CI",
+                    "3:01515_5fXjM4hQWYmz_0t20CI",
+                    "3:00303_bEqPZLpvGsdz_0t20CI"
+                ],
+                "2015 Macbook Pro 13 Inch"
+            ],
+            [
+                18329371,
+                3778798,
+                7,
+                700,
+                "10:15~47.6116~-122.3056",
+                [
+                    4,
+                    "3:00X0X_jqt2jIVrBMz_0W30MM",
+                    "3:00R0R_itidgquv0Ewz_11W0Lb",
+                    "3:00101_9Xs7gaFAdbAz_1070Ic",
+                    "3:00D0D_iJhz9OwPxGZz_0FK126",
+                    "3:01414_4YjatRlwQOKz_0UV0r9",
+                    "3:00909_c8ShB2bzFlVz_11w0x8"
+                ],
+                "Apple MacBook Air with Apple M1 chip (13 inch, 8GB RAM, 256GB SSD)"
+            ],
+            [
+                17097310,
+                3775292,
+                7,
+                399,
+                "6:16~44.9877~-123.0268",
+                [
+                    4,
+                    "3:00606_77c8vTNBqrcz_0CI0t2",
+                    "3:00F0F_8yAYgQyUYrhz_0CI0t2",
+                    "3:00O0O_jAXFqezJXbiz_0CI0t2"
+                ],
+                "2017 Apple MacBook Air | 13 in. | Core i5 | 8GB RAM | 128GB SSD"
+            ],
+            [
+                18310008,
+                3774925,
+                190,
+                -1,
+                "11:17~47.4648~-122.2075",
+                [
+                    4,
+                    "3:00T0T_7emxr86E2GZz_0ak07d"
+                ],
+                "Top CASH for - Smartphone📱Macbook💻 AppleWatch⌚️ Camera📷 iPad, etc"
+            ],
+            [
+                18307551,
+                3774719,
+                7,
+                575,
+                "10:18~47.4635~-122.3341",
+                [
+                    4,
+                    "3:00T0T_bQ2kVmAx6rPz_0CI0t2",
+                    "3:00l0l_eccIQVl1Echz_0CI0t2",
+                    "3:00a0a_lr9d7ybhAdNz_0y10pw",
+                    "3:00x0x_1re2JhBzulfz_0CI0t2",
+                    "3:00h0h_ahYwNpIsLTuz_0CI0t2",
+                    "3:00202_hK2daJdgN6Iz_0CI0t2",
+                    "3:00E0E_kXLz5ELoGMrz_0CI0t2",
+                    "3:00101_7gXc1LpGyvxz_0CI0t2",
+                    "3:01212_1IXwV7hdBgKz_0CI0t2",
+                    "3:00n0n_cQ4iMABbhRFz_0CI0t2",
+                    "3:00x0x_aTHFH7pxObOz_0CI0t2",
+                    "3:00i0i_99uMswgKrgPz_0CI0t2",
+                    "3:00e0e_1lAA5QxoB5wz_0CI0t2",
+                    "3:00n0n_dAyj52NCVtSz_0CI0t2",
+                    "3:00Z0Z_7eDiBuoHvKlz_0CI0t2"
+                ],
+                "2015 Macbook Pro Retina 13\", 16gb Memory in Excellent Condition! FAST!"
+            ],
+            [
+                17514486,
+                3773672,
+                199,
+                60,
+                "4:19~45.483~-122.612",
+                [
+                    4,
+                    "3:00h0h_8i94dKKyCzLz_0CI0t2",
+                    "3:00P0P_3TmrJkPkohZz_0CI0t2",
+                    "3:00K0K_k5Tgy7KwZnlz_0CI0t2"
+                ],
+                "24\" Thunderbolt Apple Cinema Display Monitor Mac Macbook"
+            ],
+            [
+                9056828,
+                3772501,
+                7,
+                725,
+                "4:20~45.5653~-122.6448",
+                [
+                    4,
+                    "3:00E0E_kRxM6eHro4Kz_0ud0t2",
+                    "3:00L0L_3ghP0kq3dfIz_0CI0m5",
+                    "3:00m0m_l3YcSE5fmWFz_0ve0t2",
+                    "3:00808_bAEXAXxYQI1z_0CI0p9",
+                    "3:00D0D_li74kRywhf1z_0CI0kU",
+                    "3:00S0S_gMjSVLzhrIdz_0CI0lI"
+                ],
+                "Apple M1 Macbook Air, 512GB SSD, 8GB RAM, w\/AppleCare - Like New"
+            ],
+            [
+                9136361,
+                3769714,
+                7,
+                1100,
+                "4:21~45.4373~-122.6147",
+                [
+                    4,
+                    "3:00l0l_iif1xlhWYqkz_0CI0lM"
+                ],
+                "MacBook Pro 13-inch"
+            ],
+            [
+                15033604,
+                3767864,
+                199,
+                15,
+                "10:15~47.656~-122.3869",
+                [
+                    4,
+                    "3:00x0x_1kr4zZevpY0z_0Ct0t2",
+                    "3:00T0T_aWcmQZ08UHzz_0CI0gO",
+                    "3:00000_aXrfaRIVQ4Kz_0BC0t2"
+                ],
+                "Apple 45W MagSafe 2 Power Adapter Charger 2012- 2017 MacBook Air A1436"
+            ],
+            [
+                10273938,
+                3767818,
+                199,
+                15,
+                "10:15~47.656~-122.3869",
+                [
+                    4,
+                    "3:00A0A_3OC7dNmrW1kz_0xX0t2",
+                    "3:00000_aXrfaRIVQ4Kz_0BC0t2",
+                    "3:00k0k_cRhh0LdXDaVz_0CI0ep"
+                ],
+                "Apple 60W MagSafe AC Charger Power Adapter 2007-2011 Pro MacBook A1344"
+            ],
+            [
+                7633470,
+                3767745,
+                7,
+                1150,
+                "11:22~47.4522~-122.2603",
+                [
+                    4,
+                    "3:00j0j_e9exh4Sfz5Kz_0t20CI",
+                    "3:00p0p_iUsm3EJGj4az_0CI0rF",
+                    "3:00r0r_ddfpC4B1BTpz_0CI0t2",
+                    "3:00v0v_jjjoGxPB2I7z_0c60fc"
+                ],
+                "2019 16” MacBook Pro Touchbar 2.6Ghz i7 512GB 16GB Dual Grap 1 Cycle"
+            ],
+            [
+                12791118,
+                3767733,
+                7,
+                2200,
+                "10:23~47.6362~-122.3187",
+                [
+                    4,
+                    "3:00x0x_cupyxNmzDXdz_0c6095",
+                    "3:00B0B_fKxPiLA8E2Az_04Q02I",
+                    "3:00U0U_6SSDFHsDevYz_04Q02I"
+                ],
+                "2021 Macbook Pro 16” M1 Max 32GB RAM 512GB SSD Open Box"
+            ],
+            [
+                8997094,
+                3767729,
+                7,
+                1800,
+                "10:23~47.5844~-122.3221",
+                [
+                    4,
+                    "3:00x0x_cupyxNmzDXdz_0c6095",
+                    "3:00B0B_fKxPiLA8E2Az_04Q02I",
+                    "3:00U0U_6SSDFHsDevYz_04Q02I"
+                ],
+                "2021 Macbook Pro 16” M1 Pro 16GB RAM 512GB SSD New 1 Battery Cycle"
+            ],
+            [
+                9645883,
+                3767722,
+                7,
+                1800,
+                "10:24~47.4791~-122.2696",
+                [
+                    4,
+                    "3:00k0k_5u1yaCFbwNOz_0t20CI",
+                    "3:00x0x_cupyxNmzDXdz_0c6095",
+                    "3:00Q0Q_7P0SVSyENlzz_0t20CI",
+                    "3:00B0B_fKxPiLA8E2Az_04Q02I",
+                    "3:00A0A_2BeysyVrc7dz_0CI0t2",
+                    "3:00e0e_iypqJvdD4ezz_0CI0t2",
+                    "3:00808_77WAV9NvSPpz_0CI0t2",
+                    "3:00U0U_daYZzGz377Ez_0c60lw"
+                ],
+                "2021 16”  Macbook Pro Non-Touchbar M1Pro 10Core 512GB 16GB 1 Cycle"
+            ],
+            [
+                10765646,
+                3767726,
+                7,
+                1680,
+                "10:23~47.5905~-122.3221",
+                [
+                    4,
+                    "3:00l0l_359Ur8XOvVwz_0c60fW"
+                ],
+                "2021 Macbook Pro 14” M1 Pro 16GB RAM 512GB SSD Open Box"
+            ],
+            [
+                16710195,
+                3767711,
+                7,
+                460,
+                "10:25~47.6177~-122.3204",
+                [
+                    4,
+                    "3:00s0s_fycZ5eBZZVqz_0c60g0",
+                    "3:00i0i_ab75xb81RmXz_0c6092"
+                ],
+                "Mid 2015 15\" Macbook Pro Retina 2.5Ghz i7 256GBSSD 16GB"
+            ],
+            [
+                17106232,
+                3766859,
+                7,
+                791,
+                "3:26~45.6707~-122.5069",
+                [
+                    4,
+                    "3:00O0O_aT4kdAdwXmez_0CI0t2",
+                    "3:00808_66MXC2RG7oQz_0CI0t2",
+                    "3:00K0K_4dCpzYDkWxGz_0CI0t2",
+                    "3:00s0s_2eg6dCA4Jgz_0CI0t2",
+                    "3:00404_ktnDUAoE3Uiz_0CI0t2",
+                    "3:00Z0Z_55CPMqwsz5oz_0CI0t2",
+                    "3:00l0l_83dhfsonCuNz_0CI0t2",
+                    "3:01414_9Thm13Q92NTz_0CI0t2",
+                    "3:00T0T_6iPcGncglqjz_0CI0t2"
+                ],
+                "2020 MacBook Air M1 F"
+            ],
+            [
+                18258531,
+                3766747,
+                166,
+                2399,
+                "7:27~47.6114~-122.3305",
+                [
+                    4,
+                    "3:00E0E_lM5ynRgBEYpz_0od0il",
+                    "3:01414_7DBaYmheuKez_0pO0jk",
+                    "3:00202_khMJMbRS851z_0pO0ew",
+                    "3:00F0F_a8qId0xVV2Bz_0CI0pO",
+                    "3:00H0H_38KncypbrfYz_0CI0pO",
+                    "3:00D0D_8ZSCaYTqf3gz_0CI0pO",
+                    "3:01414_90YjjHo5J3Tz_0CI0pO",
+                    "3:00h0h_klCKJmOv9XIz_084084",
+                    "3:00C0C_gAJx0LrAwwez_0CI0pO",
+                    "3:00H0H_2kxjMGd0ygrz_0CI0pO",
+                    "3:00z0z_ly61eZvJ7vVz_0CI0pO",
+                    "3:00u0u_1rzTSSMqYRYz_0CI0pO",
+                    "3:00q0q_9SldpTRBbrOz_1090Jn"
+                ],
+                "Apple Laptop MacBook Pro 16 Inch 2019 8-Core i9 64GB RAM + 4TB SSD!!"
+            ],
+            [
+                18233840,
+                3766150,
+                7,
+                280,
+                "4:28~45.56~-122.6001",
+                [
+                    4,
+                    "3:00H0H_hDXX9h880n1z_0p10t2"
+                ],
+                "2015 MacBook Pro 13 inch I5\/16GB\/128GB"
+            ],
+            [
+                15958202,
+                3763412,
+                96,
+                200,
+                "4:7~45.6722~-122.5753",
+                [
+                    4,
+                    "3:01111_dvHNfzGt2j0z_0g80c6",
+                    "3:00h0h_3gHgfrUbwLKz_0g80c6",
+                    "3:01212_aZtREfuHMoSz_0g80c6"
+                ],
+                "Hakko FX 951 Soldering Station For SMD SMT Rework Iphone Macbook"
+            ],
+            [
+                17263577,
+                3762301,
+                199,
+                25,
+                "10:15~47.656~-122.3869",
+                [
+                    4,
+                    "3:00T0T_aNjWtLQnC5Mz_0yj0t2",
+                    "3:00S0S_e8YhwYWA16lz_0zJ0t2",
+                    "3:00202_hiRmXC9HQdwz_0xP0t2",
+                    "3:00z0z_3DPRl0nPm8tz_0CI0dM"
+                ],
+                "Apple 85W MagSafe AC Power Adapter Charger 2007~2011 MacBook Pro A1343"
+            ],
+            [
+                17254548,
+                3762282,
+                7,
+                925,
+                "10:29~47.5614~-122.3321",
+                [
+                    4,
+                    "3:00505_4cZrQOMBvlWz_07K04m",
+                    "3:00o0o_9MogCR2bmHNz_0CI0t2",
+                    "3:01313_iktUEQ0vXXFz_0CI0t2",
+                    "3:00D0D_7cgHI8FWRpkz_0CI0t2",
+                    "3:00m0m_e4ZXsNBzMH0z_0t20CI",
+                    "3:00m0m_9pG2jbU3O4Bz_0CI0t2"
+                ],
+                "2020 13” MacBook Pro Touchbar M1 8GB RAM 256GB Space Grey"
+            ],
+            [
+                18214607,
+                3761129,
+                7,
+                775,
+                "5:30~45.4446~-122.5372",
+                [
+                    4,
+                    "3:00707_cbjSNULnPtyz_0t20CI",
+                    "3:00h0h_hBuKlG7fdDHz_0t20CI",
+                    "3:00i0i_4ijhcnWqbZ1z_0t20CI",
+                    "3:00t0t_5j2mvZZpk4cz_0CI0t2",
+                    "3:00K0K_gT7jpbphXJUz_0t20CI"
+                ],
+                "Rose Gold 2020 MacBook Air , Apple M1 chip."
+            ],
+            [
+                18215938,
+                3761005,
+                166,
+                765,
+                "4: 31~45.483~-122.612",
+                [
+                    4,
+                    "3: 00Y0Y_9VOK6Uhqm1rz_0yp0pO",
+                    "3: 00a0a_21ozJQakw4Dz_0yp0pO",
+                    "3: 00A0A_aoA6FcOCcJhz_0yp0pO",
+                    "3: 00L0L_ktrVLxQa5Zvz_0yp0pO",
+                    "3: 01111_2RJYjyecDz4z_0yp0pO",
+                    "3: 00k0k_9ITz1n21grvz_0yp0pO",
+                    "3: 00d0d_kVBVevEhBJEz_0yp0pO",
+                    "3: 00T0T_3ByovD0k0Kxz_0yp0pO",
+                    "3: 01111_3kwYld3YjIpz_0rV0t2"
+                ],
+                "13.3-inch MacBook Pro Apple M1 Chip - CAN DELIVER"
+            ],
+            [
+                14208090,
+                3759716,
+                96,
+                2950,
+                "7: 32~47.5073~-122.1819",
+                [
+                    4,
+                    "3: 00Z0Z_4eU8XAwAorjz_0CI0hr",
+                    "3: 00202_aliK157oAgCz_0t20CI",
+                    "3: 00Z0Z_9tOMVU46Vuqz_0CI0hr",
+                    "3: 00505_hfa3XjUr0Gtz_0CI0hr",
+                    "3: 00j0j_gEOBuXEBuhFz_0CI0t2"
+                ],
+                "MacBook Pro 16 inch M1 Max 32GB Memory 1TB SSD NEW SEALED"
+            ],
+            [
+                14878609,
+                3759015,
+                7,
+                140,
+                "2: 33~45.3586~-122.8645",
+                [
+                    4,
+                    "3: 00101_9aIOg6XQMG5z_0CI0vb",
+                    "3: 00I0I_epeUEBDAfJIz_0z60CI",
+                    "3: 00j0j_9ZIuYb8uJ6Cz_0t20CI",
+                    "3: 00O0O_bk6E6A5Pzojz_0t20CI",
+                    "3: 00A0A_2Rkxn3Y8kN6z_0CI0qD",
+                    "3: 00303_2uxlYD88CSHz_0t20CI"
+                ],
+                "Apple Macbook Air 13” (mid 2013) with accessories"
+            ],
+            [
+                13438512,
+                3758263,
+                7,
+                475,
+                "4: 20~45.5287~-122.6363",
+                [
+                    4,
+                    "3: 00l0l_8q7O14czwUHz_0t20CI",
+                    "3: 00B0B_jdxWrWjiIWbz_0t20CI",
+                    "3: 00505_aVmAAfb71Miz_0t20CI",
+                    "3: 00000_lIzG0GA7OaLz_0t20CI",
+                    "3: 00U0U_ibkxXsCzZIWz_0t20CI",
+                    "3: 00P0P_hjWKUNEisTKz_0t20CI",
+                    "3: 00Z0Z_ecYlfrIwiioz_0t20CI",
+                    "3: 01515_hhJIuCSwwlBz_0t20CI",
+                    "3: 00U0U_ps4QwBNnz4z_0t20CI"
+                ],
+                "2010 MacBook Pro 15\" i7 8GB 1TB"
+            ],
+            [
+                18187097,
+                3757648,
+                7,
+                3200,
+                "10:34~47.8392~-122.2855",
+                [
+                    4,
+                    "3:00E0E_ifBlJpr3vckz_0dq0t2",
+                    "3:00L0L_jnwyegTvHMRz_0dq0t2",
+                    "3:00r0r_9dhV3BbaRUkz_0dq0t2"
+                ],
+                "MacBook Pro 16 inch 32ram one tb sealed 32c sealed"
+            ],
+            [
+                18180671,
+                3756847,
+                7,
+                500,
+                "12:35~44.0915~-121.4073",
+                [
+                    4,
+                    "3:01111_jRZL1LbOvFzz_0t20CI",
+                    "3:00Y0Y_9lts01E4rxZz_0t20CI",
+                    "3:00t0t_eVtnLGkDnabz_0t20CI"
+                ],
+                "MacBook Pro  2017"
+            ],
+            [
+                12124077,
+                3756435,
+                7,
+                30,
+                "7:10~47.615~-122.1663",
+                [
+                    4,
+                    "3:00P0P_dSq7Hf7EfT9z_0aT0ew",
+                    "3:00s0s_lmBoAmWHZEHz_0aT0ew"
+                ],
+                "Maclocks 13\" MacBook Air Protective Lockable Cover Clear + Cable Lock"
+            ],
+            [
+                18176682,
+                3756374,
+                7,
+                2500,
+                "10:34~47.8392~-122.2855",
+                "MacBook Pro 16 inch m1 16 ram one tb sealed"
+            ],
+            [
+                17329190,
+                3755943,
+                199,
+                10,
+                "2:36~45.4094~-122.8014",
+                [
+                    4,
+                    "3:00C0C_jGN6mkEWbswz_0lM0CI",
+                    "3:00B0B_9wnZ9T2Xq16z_0lM0CI",
+                    "3:00B0B_e93nz2MVUXVz_0CI0lM",
+                    "3:00s0s_8MZWT68yQaTz_0lM0CI"
+                ],
+                "Clearguard for MacBook pro 13 and 15"
+            ],
+            [
+                8172090,
+                3755576,
+                7,
+                850,
+                "10:34~47.8392~-122.2855",
+                [
+                    4,
+                    "3:00f0f_dkTitwhAo2xz_0t20CI",
+                    "3:00E0E_jg69SvFpCSRz_0CI0t2",
+                    "3:00U0U_lHzIDsjAGdpz_0CI0t2",
+                    "3:00w0w_iJDg21eMrpqz_0dq0t2",
+                    "3:00404_jvLLWVQkesmz_0dq0t2",
+                    "3:01212_cA1Nrh0VE5Jz_0t20CI"
+                ],
+                "MacBook Air m1 chip 2020 model with apple care"
+            ],
+            [
+                12777559,
+                3749578,
+                7,
+                300,
+                "13:37~47.746~-120.798",
+                [
+                    4,
+                    "3:00F0F_fuPoRY5CTkXz_0t20CI",
+                    "3:00c0c_dSsQd81zdTSz_0CI0t2",
+                    "3:00M0M_aE9GKCguE25z_0CI0t2"
+                ],
+                "13” Macbook Air"
+            ],
+            [
+                18120790,
+                3749571,
+                7,
+                250,
+                "12:38~44.0369~-121.3444",
+                [
+                    4,
+                    "3:00p0p_kWV9m9PpkTkz_0t20CI",
+                    "3:00303_3EYBHK81Sfcz_0CI0t2"
+                ],
+                "Apple MacBook Air 13.3\""
+            ],
+            [
+                13852922,
+                3746144,
+                7,
+                2000,
+                "14:39~47.2484~-122.4643",
+                [
+                    4,
+                    "3:00N0N_k1V8h9vkPLL_0CI0t2",
+                    "3:00t0t_k49QgsE6CAi_0CI0m9",
+                    "3:00H0H_lvBRoVp4XtT_0CI0t2",
+                    "3:00t0t_lB8ps6570Cs_0CI0t2",
+                    "3:00i0i_4E2dH84N1LL_0CI0t2"
+                ],
+                "BNIB Apple MacBook Pro"
+            ]
+        ],
+        "lang": "en_US",
+        "location": {
+            "areaId": 350,
+            "city": "corvallis\/albany",
+            "country": "US",
+            "lat": 44.564701,
+            "lon": -123.261002,
+            "postal": "",
+            "radius": 60,
+            "region": "OR",
+            "url": "corvallis.craigslist.org"
+        },
+        "params": {
+            "query": "macbook",
+            "sort": "date"
+        },
+        "relatedSearches": [],
+        "resultsOrder": "date",
+        "totalResultCount": 13,
+        "updated": 1670649965,
+        "vicinity": null
+    },
+    "errors": []
+}
