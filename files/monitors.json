@@ -8,11 +8,6 @@
     "query": "macbook"
   },
   {
-    "store": "facebook",
-    "query": "macbook",
-    "delay": 30000
-  },
-  {
     "store": "offerup",
     "query": "macbook",
     "delay": 5000

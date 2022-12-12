@@ -1,7 +1,7 @@
 const rp = require('request-promise')
 
 class Product {
-  constructor(id, store, title, url, price,img,extra = '') {
+  constructor(id, store, title, url, price, img, ...extra) {
     this.id = id;
     this.store = store;
     this.title = title;
@@ -16,33 +16,33 @@ class Product {
       method: 'POST',
       url: webhook,
       headers: {
-          'content-type': 'application/json'
+        'content-type': 'application/json'
       },
       body: JSON.stringify({
-          embeds: [{
-            "title": this.title,
-            "description": this.extra,
-            "url": this.url,
-            "color": 9982959,
-            "timestamp": new Date(),
-            "thumbnail": {
-              "url": this.img
-            },
-            "author": {
-              "name": `${this.store.charAt(0).toUpperCase() + this.store.slice(1)} Monitor`
-            },
-            "footer": {
-              "text": "created by XXX#0001"
-            },
-            "fields": [
-              {
-                "name": "Price",
-                "value": `$${this.price}`
-              }
-            ]
-          }]
+        embeds: [{
+          "title": this.title,
+          "description": this.extra.join('\n\n'),
+          "url": this.url,
+          "color": 9982959,
+          "timestamp": new Date(),
+          "thumbnail": {
+            "url": this.img
+          },
+          "author": {
+            "name": `${this.store.charAt(0).toUpperCase() + this.store.slice(1)} Monitor`
+          },
+          "footer": {
+            "text": "created by XXX#0001"
+          },
+          "fields": [
+            {
+              "name": "Price",
+              "value": `$${this.price}`
+            }
+          ]
+        }]
       })
-  })
+    })
       .then(res => {
         console.log('WEBHOOK SENT');
       })

@@ -13,11 +13,33 @@ const monitor = async (config) => {
     else if (config.store == "offerup") newItems = await offerup(config);
 
     // if (Math.random() > .8) newItems.push(newItems[0]); newItems[newItems.length - 1].id = 'test'
-    newItems.forEach((i) => {
+    newItems.every((i) => {
       if (!config.items.has(i.id) && !config.first) {
-        console.log("NEW ITEM:", i.title);
-        i.ping(config.webhook);
-        config.items.add(i.id);
+        // filter out products from price
+        if ((settings.maxPrice && settings.maxPrice !== -1 && i.price > settings.maxPrice) || (settings.minPrice && settings.minPrice !== -1 && i.price < settings.minPrice)) {
+          return;
+        }
+
+        // check keyword filters
+        const pKws = settings.keywords.filter(kw => kw.startsWith('+'));
+        const nKws = settings.keywords.filter(kw => kw.startsWith('-'));
+        // pos kw check
+        pKws.every(kw => {
+          if (i.title.includes(kw) || i.extra.join(' ').includes(kw)) {
+            i.extra.push(`<@${settings.discordMentionId}>`);
+            return;
+          }
+        })
+
+        // neg kw check
+        nKws.every(kw => {
+          if (!i.title.includes(kw)) {
+            console.log("NEW ITEM:", i.title);
+            i.ping(config.webhook);
+            config.items.add(i.id);
+            return;
+          }
+        })
       } else if (!config.items.has(i.id) && config.first) {
         config.items.add(i.id);
       }
@@ -39,6 +61,8 @@ const monitors = require("../files/monitors");
 const settings = require("../files/settings");
 
 monitors.forEach((m) => {
+  // check that files exist in files dir
+
   m.first = true;
   m.items = new Set();
   if (!m.webhook) m.webhook = settings.webhook;
