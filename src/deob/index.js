@@ -1,3 +1,6 @@
+const qn = require('./qn.js')
+const Qo = require('./Qo.js')
+
 const al = (t, e, a, n) => {
     if (!e.length)
         return [];
@@ -16,7 +19,7 @@ const al = (t, e, a, n) => {
             const e = new Date(u + 864e5 * t);
             return new Date(e.getUTCFullYear(), e.getUTCMonth(), e.getUTCDate())
         }
-        , d = qn.config.leafCategoryIdToAbbrMap;
+        , d = {}
     let m = 0;
     const p = [];
     return e.forEach((t => {
@@ -81,7 +84,7 @@ const al = (t, e, a, n) => {
                             v.sqft = e.shift()
                 }
             } else
-                e < 0 ? v.dedupeKey = e : cl.clError("unknown compressed variant", "search", !0)
+                e < 0 ? v.dedupeKey = e : console.error("unknown compressed variant", "search", !0)
         }
         try {
             p.push(new Qo(v))
@@ -90,16 +93,19 @@ const al = (t, e, a, n) => {
         }
     }
     )),
-        m && cl.unexpected(m),
+        m && console.error(m),
         p
 }
 
-const data = require('./craigslist.json')
+// const n = data.data;
+// n is result.data from response via craigslist api
+const deob = (n) => {
+    const items = al(n.decode, n.items, 0, new Date());
+    items.forEach((item, i) => {
+        items[i].kwargs.categoryAbbr = qn[item.kwargs.categoryId]
+    })
 
-const n = data.data;
+    return items;
+}
 
-const items = al(n.decode, n.items, 0, new Date());
-
-console.log(items);
-
-// START RUNNING AND FIND FUNCTIONS
+module.exports = deob;

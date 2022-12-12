@@ -1,0 +1,15 @@
+[
+  {
+    "store": "craigslist",
+    "query": "macbook"
+  },
+  {
+    "store": "mercari",
+    "query": "macbook"
+  },
+  {
+    "store": "facebook",
+    "query": "macbook",
+    "delay": 30000
+  }
+]
