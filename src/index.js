@@ -1,6 +1,7 @@
 const craigslist = require("./craigslist");
 const mercari = require("./mercari");
 const facebook = require("./facebook");
+const offerup = require("./offerup");
 const Product = require("./classes/Product");
 
 const monitor = async (config) => {
@@ -9,6 +10,7 @@ const monitor = async (config) => {
     if (config.store == "craigslist") newItems = await craigslist(config);
     else if (config.store == "mercari") newItems = await mercari(config);
     else if (config.store == "facebook") newItems = await facebook(config);
+    else if (config.store == "offerup") newItems = await offerup(config);
 
     // if (Math.random() > .8) newItems.push(newItems[0]); newItems[newItems.length - 1].id = 'test'
     newItems.forEach((i) => {
